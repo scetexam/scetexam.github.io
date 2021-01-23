@@ -1,4 +1,4 @@
-let seatno = 'E723064';
+
 
 function searchBlock(seatNo, myArray) {
     for (let i = 0; i < myArray.length; i++) {

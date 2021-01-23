@@ -1,3 +1,8 @@
+var block_seatnumbers = [
+    { "block":"3", "seat_nos" : ["E723062","E723064"] },
+    { "block" : "4", "seat_nos" : ["E723065","E723066"] }
+]
+
 var rooms = [
     { "Room_No": "F-201", "Location": "EC 2nd Floor" },
     { "Room_No": "F-202", "Location": "EC 2nd Floor" },
@@ -28,3 +33,9 @@ var rooms = [
     { "Room_No": "C-303", "Location": "Civil 3rd Floor" },
     { "Room_No": "C-304", "Location": "Civil 3rd Floor" }
 ];
+
+var block_room = [
+    { "block" : "1", "Room_No" : "F-201" },
+    { "block" : "2", "Room_No" : "F-202" },
+    { "block" : "3", "Room_No" : "F-203" }
+]
