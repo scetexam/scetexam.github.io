@@ -15,6 +15,8 @@ var rooms = [
     { "Room_No": "K-202", "Location": "IT 2nd Floor" },
     { "Room_No": "K-203", "Location": "IT 2nd Floor" },
     { "Room_No": "K-204", "Location": "IT 2nd Floor" },
+    { "Room_No": "L-201", "Location": "2nd Floor" },
+    { "Room_No": "L-202", "Location": "2nd Floor" },
     { "Room_No": "C-201", "Location": "CO 2nd Floor" },
     { "Room_No": "C-202", "Location": "CO 2nd Floor" },
     { "Room_No": "C-203", "Location": "CO 2nd Floor" },
@@ -45,11 +47,9 @@ var block_room = [
     { "block" : "13", "Room_No" : "K-204" },
     { "block" : "14", "Room_No" : "K-204" },
     { "block" : "15", "Room_No" : "K-204" },
-    { "block" : "16", "Room_No" : "K-204" }
+    { "block" : "16", "Room_No" : "K-204" },
+    { "block" : "17", "Room_No" : "L-201" },
+    { "block" : "18", "Room_No" : "L-202" }
 ]
 
-var block_seatnumbers = [
-    { "block":"3", "seat_nos" : ["E723062","E723064"] },
-    { "block" : "4", "seat_nos" : ["E723065","E723066"] },
-    
-]
+var dates = ["19-Jan-21","20-Jan-21","21-Jan-21","22-Jan-21","25-Jan-21","27-Jan-21","28-Jan-21","29-Jan-21","30-Jan-21","01-Feb-21","02-Feb-21","03-Feb-21","04-Feb-21","05-Feb-21"]
