@@ -1,10 +1,13 @@
-
-
 function searchBlock(seatNo, myArray) {
     for (let i = 0; i < myArray.length; i++) {
-        for (let j = 0; j < myArray[i].seat_nos.length; j++) {
-            if (myArray[i].seat_nos[j] === seatNo)
-                return myArray[i].block;
+        if (myArray[i].date === '27-Jan-21') {
+           
+            for (let j = 0; j < myArray[i].blocks.length; j++) {
+                for (let k = 0; k < myArray[i].blocks[j].seat_nos.length; k++) {
+                    if (myArray[i].blocks[j].seat_nos[k] === seatNo)
+                        return myArray[i].blocks[j].block;
+                }
+            }
         }
     }
 }
@@ -32,16 +35,16 @@ function removeAllChildNodes(parent) {
 }
 
 function check(seatno) {
-   
-    let block = searchBlock(seatno.value, block_seatnumbers);
+
+    let block = searchBlock(seatno.value, blocks);
     let room_no = searchRoom_No(block, block_room);
     let room_location = searchLocation(room_no, rooms);
 
     const modalBody = document.getElementById("modalBody");
-    removeAllChildNodes(modalBody); 
+    removeAllChildNodes(modalBody);
 
-      
-    
+
+
     let paraBlock = document.createElement("p");
     let nodeBlock = document.createTextNode("Block No : " + block);
     paraBlock.appendChild(nodeBlock);
@@ -59,8 +62,3 @@ function check(seatno) {
     modalBody.appendChild(paraLocation);
     //alert(block + " : " + room_no + " : " + room_location); 
 }
-
-//checkButton.addEventListener("click", check(document.getElementById('seatNo')));
-
-
-

@@ -18,7 +18,11 @@
 
 
     <script src="scripts/myscripts/data.js"></script>
+    <script src="scripts/myscripts/blocks.js"></script>
     <script src="scripts/myscripts/myscript.js"></script>
+
+
+
 </head>
 
 <body>
@@ -31,40 +35,42 @@
         <div class="jumbotron">
             <div class="container">
                 <p style="color:black; font-family: verdana; font-size: 200%;"> SCET EXAM SEATING ARRANGEMENT :
-                    25-01-2021</p>
+                    25-01-2021
+                </p>
                 <p style="color:red; font-family: verdana; font-size: 130%;">Kindly Find Your Block and Room Number
                     according to seat number </p>
                 <div class="input-group mb-3">
                     <input id="seatNo" type="text" class="form-control" placeholder="Enter Seat Number"
                         aria-label="Enter Seat Number" aria-describedby="basic-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button"
-                            onclick="check(document.getElementById('seatNo'))" data-toggle="modal" data-target="#exampleModal">Check</button>
+                        <button class="btn btn-primary" type="button" onclick="check(document.getElementById('seatNo'))"
+                            data-toggle="modal" data-target="#exampleModal">Check</button>
                     </div>
                 </div>
 
-         
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">You Have to Go To</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">You Have to Go To</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body" id="modalBody">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+
+                            </div>
                         </div>
-                        <div class="modal-body" id="modalBody">
-                          
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                          
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
 
 
             </div>
